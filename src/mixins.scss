@@ -73,3 +73,13 @@
   line-height: 14px;
   color: $colorDark;
 }
+
+@mixin center-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin transition-07 {
+  transition: all 0.7s;
+}

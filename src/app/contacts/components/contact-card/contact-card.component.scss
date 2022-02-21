@@ -1,0 +1,42 @@
+@import "../../../../variables.scss";
+@import "../../../../mixins.scss";
+
+.contact-card {
+  display: flex;
+  margin-bottom: 18px;
+
+  &__image {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  &__content {
+  }
+  &__header {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: $colorBlackCard;
+    margin-bottom: 5px;
+  }
+  &__container {
+  }
+  &__organization,
+  &__department,
+  &__position {
+    @include font-contact-card__text;
+  }
+  &__position {
+    margin-bottom: 8px;
+  }
+  &__phone,
+  &__email {
+    @include font-contact-card__contacts;
+  }
+}

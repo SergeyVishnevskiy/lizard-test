@@ -15,8 +15,6 @@
     border-radius: 50%;
     margin-right: 16px;
   }
-  &__content {
-  }
   &__header {
     font-weight: normal;
     font-size: 16px;
@@ -24,8 +22,6 @@
     letter-spacing: 0.15px;
     color: $colorBlackCard;
     margin-bottom: 5px;
-  }
-  &__container {
   }
   &__organization,
   &__department,
@@ -38,5 +34,43 @@
   &__phone,
   &__email {
     @include font-contact-card__contacts;
+  }
+  @media (min-width: 768px) {
+    max-width: 343px;
+    margin-right: 60px;
+    margin-bottom: 22px;
+    &__image {
+      width: 50px;
+      height: 50px;
+    }
+    &__header,
+    &__position {
+      margin-bottom: 10px;
+    }
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &__image {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  @media (min-width: 1280px) {
+    margin-right: 60px;
+    &__image {
+      width: 67px;
+      height: 67px;
+    }
+  }
+  @media (min-width: 1440px) {
+    margin-right: 80px;
+  }
+  @media (min-width: 1600px) {
+    margin-right: 100px;
+  }
+  @media (min-width: 1600px) {
+    margin-right: 127px;
   }
 }

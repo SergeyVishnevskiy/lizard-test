@@ -17,7 +17,7 @@
         height: 25.45px;
         border: 1.28px solid $colorDarkGrey;
         border-radius: 50%;
-        @include transition-07;
+        transition: $transition;
         &:hover,
         &:focus {
           border-color: $colorPurple;
@@ -35,7 +35,7 @@
         font-size: 14px;
         line-height: 16px;
         color: $colorDarkGrey;
-        @include transition-07;
+        transition: $transition;
         &:hover,
         &:focus {
           color: $colorPurple;
